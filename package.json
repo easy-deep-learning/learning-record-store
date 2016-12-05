@@ -1,0 +1,45 @@
+{
+  "name": "learning-record-store",
+  "private": true,
+  "engines": {
+    "node": "6.8.1",
+    "npm": "3.10.8"
+  },
+  "version": "0.0.0",
+  "description": "LRS based on MongoDB, nodejs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-frontend": "react-scripts start",
+    "build-frontend": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "dev-server": "nodemon index.js",
+    "postinstall": "npm run build-frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easy-deep-learning/learning-record-store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/easy-deep-learning/learning-record-store/issues"
+  },
+  "homepage": "https://github.com/easy-deep-learning/learning-record-store#readme",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-router": "^3.0.0",
+    "react-scripts": "^0.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "proxy": "http://localhost:5000"
+}
